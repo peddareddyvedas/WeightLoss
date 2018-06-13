@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vedas.weightloss">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Profile.Activity_About"
+            android:theme="@style/Theme.NoPreviewWindow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginModule.RegisterViewActivity" />
+        <activity android:name=".LoginModule.LoginViewActivity" />
+        <activity android:name=".LoginModule.ForgotViewActivity" />
+        <activity android:name=".LoginModule.VerificationViewActivity" />
+        <activity android:name=".LoginModule.NewPasswordViewActivity" />
+        <activity
+            android:name=".Settings.PersonalInfoActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Settings.PersonalInfoNextActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Calender.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".Settings.ActivityLevelActivity"
+            android:theme="@style/MyThemeOne" />
+        <activity
+            android:name=".Settings.WeekGoalActivity"
+            android:theme="@style/MyThemeOne" />
+        <activity
+            android:name=".Settings.WeekGoalNextActivity"
+            android:theme="@style/MyThemeOne" />
+        <activity android:name=".Fooditeams.NewBreakfastActivity" />
+        <activity android:name=".Fooditeams.CreateFood" />
+        <activity android:name=".Fooditeams.BreakfastActivity" />
+        <activity android:name=".Fooditeams.Activity_Add_Food_iteams" />
+
+
+        <activity
+            android:name=".Profile.CaptureActivityPortrait"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Profile.ActivityRemainder_EditPage" />
+    </application>
+
+</manifest>

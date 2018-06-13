@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeightLoss</string>
+    <string name="verifytext">We have sent you a verification code to your "\n" mailid for email verification</string>
+    <string name="item_removed_message">Successfully send your Otp</string>
+    <string name="undo">Done</string>
+    <string name="messsage">We use this information to calculate an accurate calorie goal for you</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string-array name="days_array">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+
+    </string-array>
+
+
+    <string-array name="object_array" />
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/layout_searchborder"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:background="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_height="20dp" />
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="46dp"
+            android:hint="Enter Name"
+            android:textSize="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:ems="10">
+            <requestFocus />
+        </EditText>
+        <ImageView
+            android:layout_width="12dp"
+            android:background="@drawable/ic_email"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_cancel"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_height="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/Relativelayout"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewbeakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:backgroundTint="#ff0000"
+            android:layout_alignParentRight="true"
+            android:layout_margin="40dp"
+            android:src="@android:drawable/ic_dialog_email" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
